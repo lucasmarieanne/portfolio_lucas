@@ -1,0 +1,619 @@
+header {
+  position: fixed;
+  width: 100%;
+  padding: 15px 3%;
+  background-color: #fff;
+  z-index: 1;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .navList {
+  display: flex;
+  gap: 30px;
+}
+header nav .navContact li {
+  background-color: var(--colorBlack);
+  padding: 12px 30px;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+.wrapper .mainHome {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.wrapper .mainHome .homeBox1 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 55%;
+  height: 100%;
+  padding: 0 5%;
+}
+.wrapper .mainHome .homeBox1 .homeContainer h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+}
+.wrapper .mainHome .homeBox1 .homeContainer h1 i {
+  font-size: 50px;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeBoxTitle {
+  font-size: 70px;
+  color: #1f2126;
+  letter-spacing: -1px;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeBoxTitle span {
+  font-size: 70px;
+  color: transparent;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #1f2126;
+}
+.wrapper .mainHome .homeBox1 .homeContainer p {
+  margin-top: 40px;
+  max-width: 600px;
+  font-size: 16px;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeButton {
+  margin-top: 60px;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonStart {
+  border: 1.5px #1c2942 solid;
+  background-color: #1c2942;
+  padding: 9px 9px 9px 20px;
+  border-radius: 50px;
+  display: inline-block;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: all 300ms ease-in-out;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonStart:hover {
+  background-color: #2e436a;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonStart:hover .homeButtons .homeButtonIcon {
+  margin-left: 20px;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonStart .homeButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonStart .homeButtons .homeButtonText {
+  color: #fff;
+  font-size: 15px;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonStart .homeButtons .homeButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+  transition: all 300ms ease-in-out;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonStart .homeButtons .homeButtonIcon i {
+  color: #1c2942;
+  font-size: 15px;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonProject {
+  border: 1.5px #1c2942 solid;
+  background-color: #fff;
+  padding: 9px 9px 9px 20px;
+  border-radius: 50px;
+  display: inline-block;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: all 300ms ease-in-out;
+  font-family: "Inter", sans-serif;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonProject:hover {
+  background-color: #eeeeee;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonProject:hover .homeButtons .homeButtonIcon {
+  margin-left: 20px;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonProject .homeButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonProject .homeButtons .homeButtonText {
+  color: #1c2942;
+  font-size: 15px;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonProject .homeButtons .homeButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c2942;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+  transition: all 300ms ease-in-out;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonProject .homeButtons .homeButtonIcon i {
+  color: #fff;
+  font-size: 15px;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeContact {
+  margin-top: 70px;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeContact h3 {
+  font-size: 30px;
+}
+.wrapper .mainHome .homeBox1 .homeContainer .homeContact p {
+  margin-top: 0px;
+}
+.wrapper .mainHome .homeBox2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 100%;
+  padding: 0 5%;
+}
+.wrapper .mainHome .homeBox2 .blob {
+  height: 500px;
+  width: 500px;
+  background-image: url("../images/lucas.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: blob 5s ease-in-out infinite;
+  border: 1px #1c2942 solid;
+  box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.15), 0 -1px 0 rgba(255, 255, 255, 0.15);
+}
+@keyframes blob {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+main section.projet {
+  padding: 100px 5%;
+  height: 100%;
+  width: 100%;
+  background-color: #1f2126;
+}
+main section.projet .projetTitle {
+  margin-bottom: 80px;
+  text-align: center;
+}
+main section.projet .projetTitle h1 {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+main section.projet .projetTitle p {
+  font-size: 14px;
+  margin-top: 35px;
+  color: #bebebe;
+}
+main section.projet .projetContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  gap: 30px;
+}
+main section.projet .projetContainer .projetCard {
+  border-radius: 5px;
+  transition: all 400ms ease-in-out;
+  filter: grayscale(100%);
+}
+main section.projet .projetContainer .projetCard:hover {
+  filter: grayscale(0%);
+}
+main section.projet .projetContainer .projetCard:hover .projetCardImg img {
+  transform: scale(1.03);
+}
+main section.projet .projetContainer .projetCard figure .projetCardImg {
+  border-radius: 5px;
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+main section.projet .projetContainer .projetCard figure .projetCardImg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 400ms ease-in-out;
+}
+main section.projet .projetContainer .projetCard figure figcaption .projetCardTitle {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 10px 0 15px 0;
+}
+main section.projet .projetContainer .projetCard figure figcaption .projetCardText {
+  color: #fff;
+  font-size: 14px;
+}
+main section.services {
+  height: 100%;
+  width: 100%;
+  padding: 70px 5%;
+}
+main section.services .servicesTitle {
+  margin-bottom: 100px;
+}
+main section.services .servicesTitle h1 {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+main section.services .servicesContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 30px;
+}
+main section.services .servicesContainer .serviceBox {
+  box-shadow: 0 0 10px 0 rgb(209, 209, 209);
+  padding: 20px;
+  border-radius: 25px;
+  height: 100%;
+}
+main section.services .servicesContainer .serviceBox .serviceBoxImg {
+  width: 100%;
+}
+main section.services .servicesContainer .serviceBox .serviceBoxImg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section.reseaux {
+  width: 100%;
+  height: 100%;
+  padding: 70px 5%;
+}
+main section.reseaux .reseauxTitle h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+main section.reseaux .reseauxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+main section.reseaux .reseauxContainer .reseauxBox {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+main section.reseaux .reseauxContainer .reseauxBox i {
+  font-size: 35px;
+}
+main section.aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 100px 5%;
+  background-color: #1f2126;
+}
+main section.aboutMe .aboutContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+main section.aboutMe .aboutContainer .aboutContent .aboutTitle {
+  margin-bottom: 100px;
+}
+main section.aboutMe .aboutContainer .aboutContent .aboutTitle h1 {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+main section.aboutMe .aboutContainer .aboutContent .aboutTitle span {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 1.5px;
+  -webkit-text-stroke-color: #fff;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+main section.aboutMe .aboutContainer .aboutContent h2 {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+main section.aboutMe .aboutContainer .aboutContent h3 {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+main section.aboutMe .aboutContainer .aboutContent h3 span {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 1.5px;
+  -webkit-text-stroke-color: #fff;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+main section.aboutMe .aboutContainer .aboutContent .aboutText {
+  margin-top: 30px;
+}
+main section.aboutMe .aboutContainer .aboutContent .aboutText p {
+  color: #bebebe;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+main section.aboutMe .aboutContainer .aboutContent .aboutText p a {
+  color: #bebebe;
+  font-size: 14px;
+  text-decoration: underline;
+}
+main section.aboutMe .aboutContainer .aboutContent .aboutCv {
+  margin-top: 30px;
+  display: inline-block;
+  background-color: #fff;
+  padding: 8px 5px 8px 20px;
+  border-radius: 20px;
+  transition: all 300ms ease-in-out;
+}
+main section.aboutMe .aboutContainer .aboutContent .aboutCv:hover {
+  background-color: rgb(218, 218, 218);
+}
+main section.aboutMe .aboutContainer .aboutContent .aboutCv:hover i {
+  margin-left: 10px;
+  transform: rotateZ("45deg");
+}
+main section.aboutMe .aboutContainer .aboutContent .aboutCv .aboutCvContainer {
+  display: flex;
+  align-items: center;
+}
+main section.aboutMe .aboutContainer .aboutContent .aboutCv .aboutCvContainer .aboutCvText {
+  font-size: 14px;
+  margin-right: 15px;
+  font-family: "Inter", sans-serif;
+}
+main section.aboutMe .aboutContainer .aboutContent .aboutCv .aboutCvContainer i {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 10px;
+  transition: all 300ms ease-in-out;
+}
+main section.aboutMe .aboutContainer .aboutImg {
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+main section.aboutMe .aboutContainer .aboutImg img {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1100px) {
+  .wrapper .mainHome {
+    height: 100%;
+    flex-direction: column;
+  }
+  .wrapper .mainHome .homeBox1 {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 100px 5% 0 5%;
+  }
+  .wrapper .mainHome .homeBox2 {
+    width: 100%;
+    margin: 50px 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .wrapper .homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main section.projet .projetContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  main section.projet .projetTitle h1 {
+    font-size: 40px;
+  }
+  main section.projet .projetContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main section.aboutMe .aboutContainer .aboutContent .aboutTitle h1, main section.aboutMe .aboutContainer .aboutContent .aboutTitle span {
+    font-size: 40px;
+  }
+  main section.aboutMe .aboutContainer .aboutContent h2 {
+    font-size: 25px;
+  }
+  main section.aboutMe .aboutContainer .aboutContent h3 {
+    font-size: 40px;
+  }
+  main section.aboutMe .aboutContainer .aboutContent h3 span {
+    font-size: 40px;
+  }
+  main section.services .servicesTitle h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper header {
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: blur(20px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 0%;
+    z-index: 1000;
+  }
+  .wrapper header .navList {
+    background-color: transparent;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+  }
+  .wrapper .mainHome .homeBox1 .homeContainer h1, .wrapper .mainHome .homeBox1 .homeContainer .homeBoxTitle {
+    font-size: 55px;
+  }
+  .wrapper .mainHome .homeBox1 .homeContainer h1 i, .wrapper .mainHome .homeBox1 .homeContainer .homeBoxTitle i {
+    font-size: 40px;
+  }
+  .wrapper .mainHome .homeBox1 .homeContainer h1 span, .wrapper .mainHome .homeBox1 .homeContainer .homeBoxTitle span {
+    font-size: 55px;
+  }
+  .wrapper .mainHome .homeBox1 .homeContainer p {
+    font-size: 15px;
+  }
+  .wrapper .mainHome .homeBox2 .blob {
+    height: 350px;
+    width: 350px;
+  }
+  footer .test, footer .test2 {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 668px) {
+  .wrapper .mainHome .homeBox1 .homeContainer h1, .wrapper .mainHome .homeBox1 .homeContainer .homeBoxTitle {
+    font-size: 45px;
+  }
+  .wrapper .mainHome .homeBox1 .homeContainer h1 i, .wrapper .mainHome .homeBox1 .homeContainer .homeBoxTitle i {
+    font-size: 35px;
+  }
+  .wrapper .mainHome .homeBox1 .homeContainer h1 span, .wrapper .mainHome .homeBox1 .homeContainer .homeBoxTitle span {
+    font-size: 45px;
+  }
+  .wrapper .mainHome .homeBox1 .homeContainer p {
+    font-size: 14px;
+  }
+  .wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonStart .homeButtons .homeButtonText,
+  .wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonProject .homeButtons .homeButtonText {
+    font-size: 13px;
+  }
+  .wrapper .mainHome .homeBox2 .blob {
+    height: 350px;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrapper .mainHome .homeBox1 {
+    justify-content: flex-start;
+    text-align: start;
+    width: 100%;
+  }
+  .wrapper .mainHome .homeBox1 .homeContainer h1, .wrapper .mainHome .homeBox1 .homeContainer .homeBoxTitle {
+    font-size: 35px;
+  }
+  .wrapper .mainHome .homeBox1 .homeContainer h1 i, .wrapper .mainHome .homeBox1 .homeContainer .homeBoxTitle i {
+    font-size: 25px;
+  }
+  .wrapper .mainHome .homeBox1 .homeContainer h1 span, .wrapper .mainHome .homeBox1 .homeContainer .homeBoxTitle span {
+    font-size: 35px;
+  }
+  .wrapper .mainHome .homeBox1 .homeContainer p {
+    font-size: 13px;
+  }
+  .wrapper .mainHome .homeBox1 .homeContainer .homeButton {
+    display: flex;
+    flex-flow: column;
+    margin-top: 30px;
+  }
+  .wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonStart,
+  .wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonProject {
+    margin-right: 0px;
+  }
+  .wrapper .mainHome .homeBox1 .homeContainer .homeButton .homeButtonProject {
+    margin-top: 20px;
+  }
+  .wrapper .mainHome .homeBox2 .blob {
+    height: 350px;
+    width: 350px;
+  }
+  main section.projet .projetTitle h1 {
+    font-size: 25px;
+  }
+  main section.projet .projetTitle p {
+    font-size: 13px;
+  }
+  main section.aboutMe .aboutContainer {
+    text-align: center;
+  }
+  main section.aboutMe .aboutContainer .aboutContent .aboutTitle h1, main section.aboutMe .aboutContainer .aboutContent .aboutTitle span {
+    font-size: 30px;
+  }
+  main section.aboutMe .aboutContainer .aboutContent .aboutTitle h1 span {
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #fff;
+  }
+  main section.aboutMe .aboutContainer .aboutContent h2 {
+    font-size: 20px;
+  }
+  main section.aboutMe .aboutContainer .aboutContent h3 {
+    font-size: 30px;
+  }
+  main section.aboutMe .aboutContainer .aboutContent h3 span {
+    font-size: 30px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #fff;
+  }
+  main section.aboutMe .aboutContainer .aboutContent .aboutText {
+    font-size: 13px;
+  }
+  main section.services .servicesTitle h1 {
+    font-size: 30px;
+  }
+  footer .footerContainer .footerBoxForm .form .footerTitle h1 {
+    font-size: 30px;
+  }
+  footer .footerContainer .footerBoxForm .form .footerTitle p {
+    font-size: 14px;
+  }
+  footer .footerCopyright {
+    flex-direction: column;
+  }
+  footer .footerCopyright .copyrightInfos {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=header.css.map */
