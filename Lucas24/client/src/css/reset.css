@@ -32,3 +32,8 @@ a {
 ul, li {
     list-style: none;
 }
+
+input, button, select, textarea {
+    border: none;
+    outline: none;
+}

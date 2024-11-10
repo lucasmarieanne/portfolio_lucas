@@ -2,50 +2,47 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+require('dotenv').config();
 
 const app = express();
 const port = 5000;
 
-// Middleware
 app.use(cors({
-  origin: 'http://localhost:3000', // Autoriser uniquement les requêtes venant de ton frontend React
-  methods: ['GET', 'POST'], // Spécifier les méthodes HTTP autorisées
+  origin: 'http://localhost:3000',
+  methods: ['GET', 'POST'],
 }));
 app.use(bodyParser.json());
 
-// Route pour envoyer l'e-mail
 app.post('/send-email', (req, res) => {
   const { name, email, message } = req.body;
 
-  // Configurer Nodemailer
   const transporter = nodemailer.createTransport({
-    service: 'gmail', // ou un autre service comme Yahoo, Outlook
+    service: 'gmail',
     auth: {
-      user: 'contact.bonneposture@gmail.com', // ton email
-      pass: 'NiloOffi972', // ton mot de passe
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 
   const mailOptions = {
-    from: email, // l'email du formulaire
-    to: 'contact.bonneposture@gmail.com', // destinataire
+    from: email,
+    to: process.env.EMAIL_USER,
     subject: `Nouveau message de ${name}`,
     text: message,
   };
 
-  // Envoyer l'e-mail
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log(error);
-      res.status(500).send('Erreur lors de l\'envoi de l\'e-mail');
+      res.status(500).send("Erreur lors de l'envoi de l'e-mail");
     } else {
       console.log('E-mail envoyé: ' + info.response);
-      res.status(200).send('E-mail envoyé avec succès');
+      res.status(200).send("E-mail envoyé avec succès");
     }
   });
 });
 
-// Démarrer le serveur
-app.listen(port, () => {
-  console.log(`Serveur démarré sur le port ${port}`);
+const PORT = process.env.PORT || 5001;
+app.listen(PORT, () => {
+  console.log(`Serveur démarré sur le port ${PORT}`);
 });

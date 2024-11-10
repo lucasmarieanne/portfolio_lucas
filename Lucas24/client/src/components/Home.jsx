@@ -3,7 +3,7 @@ import '../scss/home.css';
 import '../scss/header.css';
 import Navbar from "./Navbar";
 import { Link } from 'react-router-dom';
-import image1 from '../images/test.jpg';
+import image1 from '../images/react.png';
 import image3 from '../images/meetic.png';
 
 import icon1 from '../images/html-5.png';
@@ -11,6 +11,7 @@ import icon2 from '../images/css-3.png';
 import icon3 from '../images/js.png';
 import icon4 from '../images/php.png';
 import icon5 from '../images/mysql.png';
+import icon6 from '../images/react.png';
 
 function Home () {
     // État pour stocker les données du formulaire
@@ -32,7 +33,7 @@ function Home () {
         
         // Envoie des données au serveur Node.js
         try {
-            const response = await fetch('http://localhost:5000/send-email', {
+            const response = await fetch('http://localhost:5001/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -195,6 +196,11 @@ function Home () {
                                 <img src={icon5} />
                             </div>
                         </div>
+                        <div class="serviceBox">
+                            <div class="serviceBoxImg">
+                                <img src={icon6} />
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
@@ -203,38 +209,36 @@ function Home () {
             <footer>
                 <h2>Contactez-moi</h2>
                 <form onSubmit={handleSubmit}>
-                    <label>
-                        Nom :
-                        <input
-                            type="text"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            required
-                        />
-                    </label>
-                    <label>
-                        Email :
-                        <input
-                            type="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                        />
-                    </label>
-                    <label>
-                        Message :
-                        <textarea
-                            name="message"
-                            value={formData.message}
-                            onChange={handleChange}
-                            required
-                        ></textarea>
-                    </label>
+
+                    <div className="field">
+                        <div className="fieldLabel">
+                            <label>Nom <span>*</span></label>
+                        </div>
+                        <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder='Nom' required/>
+                    </div>
+
+                    <div className="field">
+                        <div className="fieldLabel">
+                            <label>E-mail <span>*</span></label>
+                        </div>
+                        <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder='E-mail' required />
+                    </div>
+
+                    <div className="field">
+                        <div className="fieldLabel">
+                            <label>Message</label>
+                        </div>
+                        <textarea name="message" value={formData.message} onChange={handleChange} placeholder='Message' required ></textarea>
+                    </div>
+
                     <button type="submit">Envoyer</button>
+
                 </form>
+
             </footer>
+                <div className="copy">
+                    <p>© 2024, Lucas M.A</p>
+                </div>
         </div>
     );
 }

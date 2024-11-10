@@ -1,0 +1,68 @@
+footer {
+    background-color: #1f2126;
+    padding: 50px 3%;
+
+    h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    form {
+        max-width: 1000px;
+        margin: auto;
+
+        .field {
+            .fieldLabel {
+                margin-bottom: 20px;
+
+                label {
+                    color: #fff;
+
+                    span {
+                        color: red;
+                    }
+                }
+            }
+
+            input {
+                width: 100%;
+                margin-bottom: 20px;
+                border-radius: 15px;
+                border: 1.5px #dedfe4 solid;
+                padding: 16px 20px 16px 20px;
+                width: 100%;
+                font-size: 15px;
+                transition: all 250ms ease-in-out;
+            }
+
+            textarea {
+                width: 100%;
+                margin-bottom: 20px;
+                border-radius: 15px;
+                border: 1.5px #dedfe4 solid;
+                padding: 16px 20px 16px 20px;
+                width: 100%;
+                font-size: 15px;
+                transition: all 250ms ease-in-out;
+            }
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 16px 20px 16px 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+    }
+
+}
+.copy {
+    p {
+        color: #1f2126;
+        padding: 30px 50px;
+        background-color: #fff;
+    }
+}

@@ -1,1 +1,56 @@
-/*# sourceMappingURL=home.css.map */
+footer {
+  background-color: #1f2126;
+  padding: 50px 3%;
+}
+footer h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+footer form {
+  max-width: 1000px;
+  margin: auto;
+}
+footer form .field .fieldLabel {
+  margin-bottom: 20px;
+}
+footer form .field .fieldLabel label {
+  color: #fff;
+}
+footer form .field .fieldLabel label span {
+  color: red;
+}
+footer form .field input {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: 1.5px #dedfe4 solid;
+  padding: 16px 20px 16px 20px;
+  width: 100%;
+  font-size: 15px;
+  transition: all 250ms ease-in-out;
+}
+footer form .field textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: 1.5px #dedfe4 solid;
+  padding: 16px 20px 16px 20px;
+  width: 100%;
+  font-size: 15px;
+  transition: all 250ms ease-in-out;
+}
+footer form button {
+  margin-top: 20px;
+  padding: 16px 20px 16px 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.copy p {
+  color: #1f2126;
+  padding: 30px 50px;
+  background-color: #fff;
+}/*# sourceMappingURL=home.css.map */
